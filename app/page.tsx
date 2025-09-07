@@ -1,4 +1,5 @@
 import { SignedIn, SignedOut } from "@clerk/nextjs";
+import UserProfile from "./components/UserProfile";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <SignedIn>
         <h1 className="text-4xl font-bold mb-4">Welcome Back!</h1>
         <p className="text-lg text-gray-600">You are now signed in</p>
+        <UserProfile />
       </SignedIn>
     </div>
   );
